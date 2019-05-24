@@ -15,7 +15,7 @@ def animate(i): #function to be animated
     b = [] #env temp list
     c = [] #flow rate list
     format = "%Y-%m-%d %H:%M:%S" #defines format of date time for x-axis
-    with open('temperature.txt', 'r') as csvfile: #opens the data text file
+    with open('test_data.txt', 'r') as csvfile: #opens the data text file
         toplot = csv.reader(csvfile, delimiter=',') #reads the text file recognizing values as comma separated
         toplot = list(toplot)
         if len(toplot) > 50: #appends updated values after 50 values have already been placed

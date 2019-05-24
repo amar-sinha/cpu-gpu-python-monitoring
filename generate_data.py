@@ -54,16 +54,16 @@ def flow():
 	count = 0 #resets the pulse count
 	return(flowtext)
 
-f = open('temperature.txt', 'w').close() #clears the data text file for new use
+f = open('test_data.txt', 'w').close() #clears the data text file for new use
 header = "Date & Time, Room Temperature (F), Temperature In (F), Temperature Out (F), Flow Rate (GPM)" #adds headers to the data text file
-f = open("temperature.txt", "w") #opens file for writing
+f = open("test_data.txt", "w") #opens file for writing
 f.write(header) #writes the headers to the file
 
 while True: #writes data to the file in a continuous loop
 	time_new = time.time() + 12
 	while time.time() <= time_new:
 		continue
-	with open("temperature.txt", "a") as f: #use "a" to keep adding the file and not rewrite over data
+	with open("test_data.txt", "a") as f: #use "a" to keep adding the file and not rewrite over data
 		text = str("(" + str(date.today()) +  ", " + time.strftime("%H:%M:%S") + ")"  + ", " + read_temp(room_temp_sensor) + ", " + read_temp(temp_in_sensor) + ", " + read_temp(temp_out_sensor) + ", " + flow())
 		f.write('\n')
 		f.write(text)
