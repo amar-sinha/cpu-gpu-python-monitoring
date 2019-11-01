@@ -32,3 +32,6 @@ Install RPi.GPIO
 * _Sample Output Graph_ - The figure below is an example output of the `generate_graph.py` program file based off of the data included in the `test_data.txt` file.
 
 <img src="https://github.com/amar-sinha/cpu-gpu-python-monitoring/blob/master/images/example_output_graph.png?raw=true" alt="prototype_drawing" width="700"/>
+
+### <u>Poster</u>
+<img src="https://github.com/amar-sinha/cpu-gpu-python-monitoring/blob/master/images/CPU_GPU_CoolingUnit_Poster.jpg?raw=true" alt="prototype_drawing" width="900"/>
